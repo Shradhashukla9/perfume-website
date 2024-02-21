@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.parcel-cache/
+.env
+.env.local
+*.log
+build/
+.DS_Store
+coverage/
+npm-debug.log
+yarn-error.log

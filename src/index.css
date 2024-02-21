@@ -1,0 +1,143 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    color:aliceblue;
+    background: rgba(205,28,117,0.95);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.nav-items >ul{
+  list-style-type: none;
+  display: flex;
+}
+.nav-items >ul >li{
+    padding:10px;
+    justify-content: space-between;
+   font-size: larger;
+
+}
+.logo{
+    width:100px;
+    border-style: groove;
+}
+.perfume-list {
+   margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    
+  }
+  
+  .perfume-card {
+    /* Add styling for your perfume cards */
+    /* For example: */
+    width: 300px;
+    margin-top: 50px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(249, 227, 241);
+  }
+  
+  .perfume-card img {
+    /* Adjust image size to fit inside the card */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* Preserve aspect ratio while covering the entire container */
+  }
+  .perfume-card >desc{
+    color:rgb(152,150,240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #desc{
+    align-content: end;
+    margin-bottom: 10px;
+  }
+  .search-btn{
+
+    background-color: beige;
+  }
+#log{
+  padding: 10px;
+  border-color: black;
+  
+border-radius: 50px;
+
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 400px;
+}
+
+.search-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+.header button{
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+ 
+  border-radius: 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    color:aliceblue;
+    background: rgba(205,28,117,0.95);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 200px;
+}
+.footer-logo > img{
+  width:150px;
+  border-style: groove;
+  
+  margin-top: 20px;
+align-content: center;
+background-color: azure;
+}
+.footer-info{
+  width:600px;
+  font-weight: 300;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  font-size: x-large;
+  align-content: center;
+  margin-top: 20px;
+ 
+}
+.footer-logo2 > img{
+  margin-top: 40px;
+align-content: center;
+background-color: azure;
+}
+  
