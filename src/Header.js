@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Title } from "./Config";
 import "./index.css"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isLogged, setIsLogged] = useState(false);
@@ -10,11 +11,19 @@ const Header = () => {
       <Title />
       <div className="nav-items">
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>contact</li>
-          <li>cart</li>
-          <li>review</li>
+          <Link to ="/">
+           <li>Home</li>
+          </Link>
+          <Link to ="/AboutUs">
+           <li>About us</li>
+          </Link>
+          <Link to ="/Contact">
+           <li>Contact</li>
+          </Link>
+          <Link to ="/Cart">
+           <li>Cart</li>
+          </Link>
+          
         </ul>
       </div>
       <div id="log">

@@ -7,15 +7,27 @@
     background: rgba(205,28,117,0.95);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.nav-items >ul{
+ .nav-items ul{
   list-style-type: none;
   display: flex;
+  align-content: space-between;
 }
-.nav-items >ul >li{
+.nav-items ul li{
     padding:10px;
     justify-content: space-between;
+    display: inline;
    font-size: larger;
+   margin-right: 20px;
+   color:aliceblue;
 
+}
+.nav-items ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-items ul >li >a:hover {
+  text-decoration: underline;
 }
 .logo{
     width:100px;
@@ -30,9 +42,9 @@
   }
   
   .perfume-card {
-    /* Add styling for your perfume cards */
-    /* For example: */
-    width: 300px;
+   
+    width: 400px;
+    height: 700px;
     margin-top: 50px;
     margin: 10px;
     border: 1px solid #ccc;
@@ -47,17 +59,16 @@
     /* Adjust image size to fit inside the card */
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit:fill;
+    align-content: flex-end;
     /* Preserve aspect ratio while covering the entire container */
   }
   .perfume-card >desc{
     color:rgb(152,150,240);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    
   }
-  #desc{
-    align-content: end;
-    margin-bottom: 10px;
-  }
+ 
   .search-btn{
 
     background-color: beige;
@@ -140,4 +151,224 @@ background-color: azure;
 align-content: center;
 background-color: azure;
 }
+  .shimmer-tab{
+    width: 300px;
+    margin-top: 50px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:#ccc;
+  }
+  .shimmer{
+    display: flex;
+    align-content: space-between;
+  }
+.info-scents{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+ font-size: medium;
+ background-color: rgba(205,28,117,0.95);
+ color:#fff;
+    margin: 10px;
+    padding: 10px;
+margin-top: 40px;
+ margin-left: 10px;;
+}
+.info-scents p{
+  margin: 20px;
+    padding: 10px;
+}
+.info-scents h3 {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+ .section-header{
+  width: 900px;
+   margin: 10px;
+   font-size:large;
+   font-style: italic;
+   font-family: cursive;
+  height: 100px;
+   color: rgba(205,28,117,0.95);
+  margin-left: 550px;
+}
+
+
+.scent-img > img{
+    
+    position: absolute;
+   
   
+    background-size: cover;
+}
+
+.about-us{
+  height: 2000px;
+}
+.location-grid {
+ 
+ display: flex;
+ align-content: space-between;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+.contact-info,
+.contact-form {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info address {
+  margin-bottom: 20px;
+}
+
+.contact-heading {
+  font-size: 50px;
+  
+}
+
+.contact-form form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button  {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 100px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.cart-drawer {
+  margin-left: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px; 
+  height: 600px;
+}
+
+.cart-drawer p {
+  margin: 0;
+}
+
+.cart-drawer__items {
+  margin-bottom: 20px;
+  width: 300px; 
+  height: 200px;
+}
+
+.line-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 300px; 
+  height: 300px;
+}
+
+.line-item img {
+  width: 300px; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 10px;
+  margin-top:150px
+}
+
+.line-item-info {
+  flex: 1;
+}
+
+.line-item-info a {
+  color: #333;
+  text-decoration: none;
+  font-size: medium;
+  display: flex;
+  width:100px;
+  margin-top: 500px;
+}
+
+.line-item-info p {
+  margin-top: 600px;;
+}
+
+.line-item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.line-item-quantity input[type="number"] {
+  width: 40px; /* Adjust input width as needed */
+  margin-right: 10px;
+}
+
+.cart-drawer__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 250px ;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.text-subdued {
+  color: #777;
+}

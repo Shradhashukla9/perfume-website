@@ -3,10 +3,10 @@
 const PerfumeCard = (props) => {
     return (
       <div className="perfume-card">
-        <img id="imagep" src={props.img} alt={props.title} />
+        <img id="imagep" src={props.image.src} alt={props.product.title} />
         <div id="desc">
-        <h2>{props.title}</h2>
-        <p>{props.desc}</p>
+        <h2>{props.product.title}</h2>
+        <p>{props.price.currencyCode}  {props.price.amount}</p>
         </div>
       </div>
     );

@@ -1,12 +1,12 @@
 import { perfumelist } from "./Config";
 import PerfumeCard from "./PerfumeCard";
-
+import Shimmer from "./components/Shimmer";
 import { useState } from "react";
 
 
 function filterData (searchText, perfumes) {
     const filteredData = perfumes.filter((perfume) =>
-        perfume.title.includes(searchText)
+        perfume.product.title.includes(searchText)
     );
     return filteredData;
 }
@@ -20,7 +20,7 @@ const Body = () => {
         setPerfumes(filteredData);
     };
 
-    return  (
+    return (perfumes.length ===0)? <Shimmer/> : (
         <>
         
             <div className="search-container">
@@ -40,7 +40,7 @@ const Body = () => {
                 </button>
             </div>
             <div className="perfume-list">
-                {perfumes.map(perfume => <PerfumeCard key={perfume.title} {...perfume} />)}
+                {perfumes.map(perfume => <PerfumeCard key={perfume.id} {...perfume} />)}
             </div>
         </>
     );
